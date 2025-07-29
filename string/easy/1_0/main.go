@@ -23,3 +23,15 @@ func main() {
 
 	fmt.Println(result)
 }
+
+// ReverseString returns the reversed string.
+func ReverseString(input string) string {
+	if len(input) <= 1 {
+		return input
+	}
+	result := ""
+	for i := len(input) - 1; i >= 0; i-- {
+		result += string(input[i])
+	}
+	return result
+}
